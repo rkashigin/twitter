@@ -24,8 +24,8 @@ const useStyles = makeStyles((theme) => ({
     left: "50%",
     top: "50%",
     transform: "translate(-50%, -50%)",
-    width: "370%",
-    height: "370%",
+    width: "400%",
+    height: "400%",
   },
   blueSideListInfo: {
     position: "relative",
