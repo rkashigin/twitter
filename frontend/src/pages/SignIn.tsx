@@ -85,16 +85,16 @@ export const useStylesSignIn = makeStyles((theme) => ({
   }
 }));
 
-function SignIn() {
+export const SignIn: React.FC = (): React.ReactElement => {
   const classes = useStylesSignIn();
-  const [visibleModal, setVisibleModal] = React.useState<'signIn' | 'signUp'>();
+  const [visibleModal, setVisibleModal] = React.useState<"signIn" | "signUp">();
 
   const handleClickOpenSignIn = (): void => {
-    setVisibleModal('signIn');
+    setVisibleModal("signIn");
   };
 
   const handleClickOpenSignUp = (): void => {
-    setVisibleModal('signUp');
+    setVisibleModal("signUp");
   };
 
   const handleCloseModal = (): void => {
@@ -151,7 +151,7 @@ function SignIn() {
           <Button onClick={handleClickOpenSignIn} variant="outlined" color="primary" fullWidth>
             Sign in
           </Button>
-          <ModalBlock title="Create new account" visible={visibleModal === 'signUp'} onClose={handleCloseModal}>
+          <ModalBlock title="Create new account" visible={visibleModal === "signUp"} onClose={handleCloseModal}>
             <FormControl component="fieldset" fullWidth className={classes.loginFormControl}>
               <FormGroup aria-label="position" row>
                 <TextField
@@ -196,7 +196,7 @@ function SignIn() {
               </FormGroup>
             </FormControl>
           </ModalBlock>
-          <ModalBlock title="Enter Twitter" visible={visibleModal === 'signIn'} onClose={handleCloseModal}>
+          <ModalBlock title="Enter Twitter" visible={visibleModal === "signIn"} onClose={handleCloseModal}>
             <FormControl component="fieldset" fullWidth className={classes.loginFormControl}>
               <FormGroup aria-label="position" row>
                 <TextField
