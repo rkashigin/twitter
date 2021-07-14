@@ -1,5 +1,5 @@
-import React from 'react';
-import {Button, IconButton, Typography} from "@material-ui/core";
+import React from "react";
+import { Button, IconButton, Typography } from "@material-ui/core";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import SearchIcon from "@material-ui/icons/Search";
 import NotificationsIcon from "@material-ui/icons/NotificationsNoneOutlined";
@@ -7,15 +7,18 @@ import MessageIcon from "@material-ui/icons/MailOutline";
 import BookmarkIcon from "@material-ui/icons/BookmarkBorder";
 import ListIcon from "@material-ui/icons/ListAlt";
 import UserIcon from "@material-ui/icons/PersonOutline";
-import {useHomeStyles} from "../pages/Home";
-import CreateIcon from '@material-ui/icons/Create';
-import Hidden from '@material-ui/core/Hidden';
+import CreateIcon from "@material-ui/icons/Create";
+import Hidden from "@material-ui/core/Hidden";
+
+import { useHomeStyles } from "../pages/Home/theme";
 
 interface SideMenuProps {
   classes: ReturnType<typeof useHomeStyles>;
-};
+}
 
-export const SideMenu: React.FC<SideMenuProps> = ({ classes }): React.ReactElement => {
+export const SideMenu: React.FC<SideMenuProps> = ({
+  classes,
+}): React.ReactElement => {
   return (
     <ul className={classes.sideMenuList}>
       <li className={classes.sideMenuListItem}>

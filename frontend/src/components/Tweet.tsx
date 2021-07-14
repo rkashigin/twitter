@@ -1,11 +1,12 @@
-import React from 'react';
+import React from "react";
 import classNames from "classnames";
-import {Avatar, Grid, IconButton, Paper, Typography} from "@material-ui/core";
+import { Avatar, IconButton, Paper, Typography } from "@material-ui/core";
 import CommentIcon from "@material-ui/icons/ChatBubbleOutlineOutlined";
 import RetweetIcon from "@material-ui/icons/RepeatOutlined";
 import LikeIcon from "@material-ui/icons/FavoriteBorderOutlined";
 import ShareIcon from "@material-ui/icons/ReplyOutlined";
-import {useHomeStyles} from "../pages/Home";
+
+import { useHomeStyles } from "../pages/Home/theme";
 
 interface TweetProps {
   classes: ReturnType<typeof useHomeStyles>;
@@ -15,11 +16,18 @@ interface TweetProps {
     avatarUrl: string;
   };
   text: string;
-};
+}
 
-export const Tweet: React.FC<TweetProps> = ({ classes, user, text }: TweetProps): React.ReactElement => {
+export const Tweet: React.FC<TweetProps> = ({
+  classes,
+  user,
+  text,
+}: TweetProps): React.ReactElement => {
   return (
-    <Paper className={classNames(classes.tweet, classes.tweetsHeader)} variant="outlined">
+    <Paper
+      className={classNames(classes.tweet, classes.tweetsHeader)}
+      variant="outlined"
+    >
       <Avatar
         className={classes.tweetAvatar}
         alt={`User ${user.username} avatar`}
@@ -32,9 +40,7 @@ export const Tweet: React.FC<TweetProps> = ({ classes, user, text }: TweetProps)
           <span className={classes.tweetUserName}>•</span>&nbsp;
           <span className={classes.tweetUserName}>1 ч</span>&nbsp;
         </Typography>
-        <Typography variant="body1">
-          {text}
-        </Typography>
+        <Typography variant="body1">{text}</Typography>
         <div className={classes.tweetFooter}>
           <div>
             <IconButton color="primary">
