@@ -37,7 +37,9 @@ export const Home: React.FC = (): React.ReactElement => {
               <Typography variant="h6">Home</Typography>
             </Paper>
             <Paper>
-              <AddTweetForm classes={classes} />
+              <div className={classes.addForm}>
+                <AddTweetForm classes={classes} />
+              </div>
               <div className={classes.addFormBottomLine} />
             </Paper>
             {[
