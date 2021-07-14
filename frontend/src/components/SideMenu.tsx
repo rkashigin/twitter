@@ -36,7 +36,7 @@ export const SideMenu: React.FC<SideMenuProps> = ({ classes }): React.ReactEleme
       <li className={classes.sideMenuListItem}>
         <div>
           <NotificationsIcon className={classes.sideMenuListItemIcon} />
-          <Hidden>
+          <Hidden smDown>
             <Typography className={classes.sideMenuListItemLabel} variant="h6">
               Уведомления
             </Typography>
@@ -46,7 +46,7 @@ export const SideMenu: React.FC<SideMenuProps> = ({ classes }): React.ReactEleme
       <li className={classes.sideMenuListItem}>
         <div>
           <MessageIcon className={classes.sideMenuListItemIcon} />
-          <Hidden>
+          <Hidden smDown>
             <Typography className={classes.sideMenuListItemLabel} variant="h6">
               Сообщения
             </Typography>
@@ -56,7 +56,7 @@ export const SideMenu: React.FC<SideMenuProps> = ({ classes }): React.ReactEleme
       <li className={classes.sideMenuListItem}>
         <div>
           <BookmarkIcon className={classes.sideMenuListItemIcon} />
-          <Hidden>
+          <Hidden smDown>
             <Typography className={classes.sideMenuListItemLabel} variant="h6">
               Закладки
             </Typography>
@@ -66,7 +66,7 @@ export const SideMenu: React.FC<SideMenuProps> = ({ classes }): React.ReactEleme
       <li className={classes.sideMenuListItem}>
         <div>
           <ListIcon className={classes.sideMenuListItemIcon} />
-          <Hidden>
+          <Hidden smDown>
             <Typography className={classes.sideMenuListItemLabel} variant="h6">
               Список
             </Typography>
@@ -76,7 +76,7 @@ export const SideMenu: React.FC<SideMenuProps> = ({ classes }): React.ReactEleme
       <li className={classes.sideMenuListItem}>
         <div>
           <UserIcon className={classes.sideMenuListItemIcon} />
-          <Hidden>
+          <Hidden smDown>
             <Typography className={classes.sideMenuListItemLabel} variant="h6">
               Профиль
             </Typography>
