@@ -12,18 +12,32 @@ import {
   ListItemText,
   List,
   Button,
+  CircularProgress,
 } from "@material-ui/core";
 import SearchIcon from "@material-ui/icons/Search";
 import PersonAddIcon from "@material-ui/icons/PersonAddOutlined";
+import { useDispatch, useSelector } from "react-redux";
 
 import { Tweet } from "../../components/Tweet";
 import { SideMenu } from "../../components/SideMenu";
 import { AddTweetForm } from "../../components/AddTweetForm";
 import { SearchTextField } from "../../components/SearchTextField";
 import { useHomeStyles } from "./theme";
+import { fetchTweets } from "../../store/ducks/tweets/actionCreators";
+import {
+  selectIsTweetsLoading,
+  selectTweetsItems,
+} from "../../store/ducks/tweets/selectors";
 
 export const Home: React.FC = (): React.ReactElement => {
   const classes = useHomeStyles();
+  const dispatch = useDispatch();
+  const tweets = useSelector(selectTweetsItems);
+  const isLoading = useSelector(selectIsTweetsLoading);
+
+  React.useEffect(() => {
+    dispatch(fetchTweets());
+  }, [dispatch]);
 
   return (
     <Container className={classes.wrapper} maxWidth="lg">
@@ -42,22 +56,20 @@ export const Home: React.FC = (): React.ReactElement => {
               </div>
               <div className={classes.addFormBottomLine} />
             </Paper>
-            {[
-              ...new Array(20).fill(
+            {isLoading ? (
+              <div className={classes.tweetsCentred}>
+                <CircularProgress />
+              </div>
+            ) : (
+              tweets.map((tweet) => (
                 <Tweet
+                  key={tweet._id}
+                  text={tweet.text}
+                  user={tweet.user}
                   classes={classes}
-                  user={{
-                    fullname: "Roman Kashigin",
-                    username: "r.kashigin",
-                    avatarUrl:
-                      "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80",
-                  }}
-                  text={
-                    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt nostrum sequi velit voluptate? Alias, asperiores aspernatur dolor dolore dolorem doloribus eaque eveniet exercitationem explicabo iure magnam minima, non provident, tempore."
-                  }
                 />
-              ),
-            ]}
+              ))
+            )}
           </Paper>
         </Grid>
         <Grid item sm={3} md={3}>
