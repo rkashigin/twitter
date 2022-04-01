@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Button, IconButton, Typography } from "@material-ui/core";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import SearchIcon from "@material-ui/icons/Search";
@@ -34,9 +35,11 @@ export const SideMenu: React.FC<SideMenuProps> = ({
   return (
     <ul className={classes.sideMenuList}>
       <li className={classes.sideMenuListItem}>
-        <IconButton aria-label="twitter" color="primary">
-          <TwitterIcon className={classes.logoIcon} />
-        </IconButton>
+        <Link to="/home">
+          <IconButton aria-label="twitter" color="primary">
+            <TwitterIcon className={classes.logoIcon} />
+          </IconButton>
+        </Link>
       </li>
       <li className={classes.sideMenuListItem}>
         <div>

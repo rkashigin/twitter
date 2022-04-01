@@ -11,15 +11,13 @@ import "./index.css";
 import theme from "./theme";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <ThemeProvider theme={theme}>
-      <Router>
-        <CssBaseline />
-        <Provider store={store}>
-          <App />
-        </Provider>
-      </Router>
-    </ThemeProvider>
-  </React.StrictMode>,
+  <ThemeProvider theme={theme}>
+    <Router>
+      <CssBaseline />
+      <Provider store={store}>
+        <App />
+      </Provider>
+    </Router>
+  </ThemeProvider>,
   document.getElementById("root")
 );
