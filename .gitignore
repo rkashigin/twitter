@@ -22,6 +22,6 @@
 /**/yarn-debug.log*
 /**/yarn-error.log*
 
-/.idea
+/**/.idea
 
 /frontend/src/react-app-env.d.ts

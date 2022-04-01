@@ -1,94 +1,44 @@
 {
   "tweets": [
     {
-      "_id": "60f1d374cb6083f9244a716c",
-      "text": "Voluptate eiusmod eiusmod labore consequat pariatur ut mollit tempor ipsum non. Minim aliqua laboris aliquip officia ad magna cupidatat tempor ad. Ea do Lorem eu do sint.",
+      "id": 1,
+      "_id": "z8hhi38ishn",
+      "text": "My first tweet.",
       "user": {
-        "fullname": "Farley Nguyen",
-        "username": "odonnell",
-        "avatarUrl": "https://source.unsplash.com/random/100x100?2"
-      }
-    },
-    {
-      "_id": "60f1d3746f404aae48b70b45",
-      "text": "Nostrud sint veniam qui exercitation culpa. Veniam excepteur eiusmod veniam ipsum sunt sint eiusmod veniam voluptate magna esse reprehenderit cillum. Sit esse qui amet laborum duis occaecat labore.",
-      "user": {
-        "fullname": "Denise Suarez",
-        "username": "coleman",
-        "avatarUrl": "https://source.unsplash.com/random/100x100?1"
-      }
-    },
-    {
-      "_id": "60f1d3744f97b89638f0b3ae",
-      "text": "Consectetur occaecat excepteur nostrud tempor in. Duis culpa adipisicing quis quis. Exercitation aute excepteur consequat dolor in enim duis minim ad ex ullamco ipsum id elit.",
-      "user": {
-        "fullname": "Kelly Hickman",
-        "username": "sloan",
-        "avatarUrl": "https://source.unsplash.com/random/100x100?4"
-      }
-    },
-    {
-      "_id": "60f1d374f7aaf15fc5496850",
-      "text": "Occaecat commodo pariatur aliquip ad non laboris nulla Lorem do est minim velit excepteur laborum. Reprehenderit non reprehenderit tempor enim commodo. Esse ullamco amet veniam esse officia adipisicing reprehenderit dolore do est consequat elit adipisicing.",
-      "user": {
-        "fullname": "Jeannette Foster",
-        "username": "camille",
-        "avatarUrl": "https://source.unsplash.com/random/100x100?3"
-      }
-    },
-    {
-      "_id": "60f1d374215d62b61634091a",
-      "text": "Est est et irure nostrud consectetur duis dolore adipisicing. In ut minim amet esse. Commodo id eiusmod veniam consectetur irure est eiusmod qui excepteur commodo laboris.",
-      "user": {
-        "fullname": "Cindy Jackson",
-        "username": "anita",
-        "avatarUrl": "https://source.unsplash.com/random/100x100?4"
-      }
-    },
-    {
-      "_id": "60f1d3748b5bf7ba28a09b30",
-      "text": "Quis velit occaecat enim deserunt consequat velit Lorem pariatur sunt. Quis consequat ex voluptate Lorem aute id ullamco Lorem est ad occaecat voluptate cupidatat ad. Mollit laborum excepteur magna exercitation est mollit enim eiusmod exercitation.",
-      "user": {
-        "fullname": "Briggs Conner",
-        "username": "taylor",
-        "avatarUrl": "https://source.unsplash.com/random/100x100?3"
-      }
-    },
-    {
-      "_id": "60f1d374c08ff2281d78ea71",
-      "text": "Enim fugiat fugiat tempor pariatur sint aliqua ipsum. Consectetur dolor cupidatat Lorem incididunt voluptate. In veniam ex adipisicing voluptate est ipsum in elit voluptate.",
-      "user": {
-        "fullname": "Kayla Gordon",
-        "username": "katie",
-        "avatarUrl": "https://source.unsplash.com/random/100x100?3"
-      }
-    },
-    {
-      "_id": "60f1d374b605abe81ee8b62c",
-      "text": "In exercitation irure sint ea. Eiusmod excepteur elit veniam aute reprehenderit sint adipisicing esse minim eu sint id id labore. Est adipisicing fugiat commodo irure ullamco ex esse eu Lorem qui dolor.",
-      "user": {
-        "fullname": "Berg Spears",
-        "username": "durham",
-        "avatarUrl": "https://source.unsplash.com/random/100x100?4"
-      }
-    },
-    {
-      "_id": "60f1d374af599e48bae46263",
-      "text": "Commodo excepteur nulla tempor laborum. Commodo dolor in veniam minim fugiat est elit nulla qui ullamco est minim. Cillum amet veniam velit ipsum.",
-      "user": {
-        "fullname": "Gonzalez Summers",
-        "username": "vargas",
-        "avatarUrl": "https://source.unsplash.com/random/100x100?4"
-      }
-    },
-    {
-      "_id": "60f1d3749ab2ae66ba5f45d4",
-      "text": "Voluptate in occaecat nulla aute esse dolore excepteur ea nulla enim. Ullamco exercitation minim consectetur laborum officia magna est. Consequat ut mollit voluptate do et et.",
-      "user": {
-        "fullname": "Levy Chang",
-        "username": "susie",
+        "fullname": "Roman Kashigin",
+        "username": "r.kashigin",
         "avatarUrl": "https://source.unsplash.com/random/100x100?5"
       }
+    },
+    {
+      "id": 3,
+      "_id": "z8hhi38gihn",
+      "text": "My second tweet.",
+      "user": {
+        "fullname": "Roman Kashigin",
+        "username": "r.kashigin",
+        "avatarUrl": "https://source.unsplash.com/random/100x100?5"
+      }
+    },
+    {
+      "_id": "yljrrenzz8m",
+      "text": "My third tweet.",
+      "user": {
+        "fullname": "Roman Kashigin",
+        "username": "r.kashigin",
+        "avatarUrl": "https://source.unsplash.com/random/100x100?5"
+      },
+      "id": 4
+    },
+    {
+      "_id": "z8hhi38iihn",
+      "text": "My forth tweet.",
+      "user": {
+        "fullname": "Roman Kashigin",
+        "username": "r.kashigin",
+        "avatarUrl": "https://source.unsplash.com/random/100x100?5"
+      },
+      "id": 5
     }
   ],
   "tags": [
@@ -100,12 +50,12 @@
     {
       "_id": "60f1d374cb6013f9244a716c",
       "name": "Навальный",
-      "count":  1523
+      "count": 1523
     },
     {
       "_id": "60f1d374cb6053f9244a716c",
       "name": "Гитлер",
-      "count":  314
+      "count": 314
     }
   ],
   "users": [

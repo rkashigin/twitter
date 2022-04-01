@@ -9,6 +9,8 @@ import ImageOutlinedIcon from "@material-ui/icons/ImageOutlined";
 import EmojiIcon from "@material-ui/icons/SentimentSatisfiedAltOutlined";
 
 import { useHomeStyles } from "../pages/Home/theme";
+import { useDispatch } from "react-redux";
+import { addTweet, fetchAddTweet } from "../store/ducks/tweets/actionCreators";
 
 interface AddTweetFormProps {
   classes: ReturnType<typeof useHomeStyles>;
@@ -21,7 +23,8 @@ export const AddTweetForm: React.FC<AddTweetFormProps> = ({
   classes,
   maxRows,
 }): React.ReactElement => {
-  const [text, setText] = React.useState<string>("");
+  const dispatch = useDispatch();
+  const [text, setText] = React.useState("");
   const textLimitPercent = Math.floor((text.length / MAX_LENGTH) * 100);
   const textCount = MAX_LENGTH - text.length;
 
@@ -34,6 +37,7 @@ export const AddTweetForm: React.FC<AddTweetFormProps> = ({
   };
 
   const handleClickAddTweet = (): void => {
+    dispatch(fetchAddTweet(text));
     setText("");
   };
 
