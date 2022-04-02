@@ -52,4 +52,5 @@ export type TweetsActions =
   | IFetchTweetsAction
   | ISetTweetsLoadingState
   | IFetchAddTweetAction
-  | IAddTweetAction;
+  | IAddTweetAction
+  | ISetAddFormStateAction;
